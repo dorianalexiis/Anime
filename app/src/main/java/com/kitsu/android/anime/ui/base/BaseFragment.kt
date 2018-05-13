@@ -41,8 +41,8 @@ open class BaseFragment: Fragment(){
         activity?.pushFragment(fragment, container, addBackStack)
     }
 
-    fun replaceFragment(fragment: Fragment) {
-        activity?.pushFragment(fragment, addBackStack =  false)
+    fun replaceFragment(fragment: Fragment, container: Int = R.id.container) {
+        activity?.pushFragment(fragment,container = container, addBackStack =  false)
     }
 
 }
