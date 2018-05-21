@@ -32,7 +32,6 @@ class DetailActivity:BaseActivity(), DetailView{
     override fun onViewCreated(savedInstanceState: Bundle?) {
         super.onViewCreated(savedInstanceState)
         setSupportActionBar(toolbar)
-        //collapsing_toolbar.title = ""
 
         collapsing_toolbar.title = " "
 
