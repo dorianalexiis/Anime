@@ -24,7 +24,7 @@ open class BaseActivity : AppCompatActivity(), HasSupportFragmentInjector {
 
     protected var mTagFragments: ArrayList<String>? = null
 
-    fun getActivityLayoutResId(): Int = R.layout.activity_base
+    open fun getActivityLayoutResId(): Int = R.layout.activity_base
 
     override fun onCreate(savedInstanceState: Bundle?) {
         initialize()
@@ -43,7 +43,7 @@ open class BaseActivity : AppCompatActivity(), HasSupportFragmentInjector {
 
     }
 
-    fun initialize() {
+    open fun initialize() {
         AndroidInjection.inject(this)
     }
 

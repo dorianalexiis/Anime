@@ -3,10 +3,8 @@ package com.kitsu.android.anime.ui.modules.main.mainpager
 import android.os.Bundle
 import android.view.View
 import com.kitsu.android.anime.R
+import com.kitsu.android.anime.ui.adapters.MainPagerAdapter
 import com.kitsu.android.anime.ui.base.BaseFragment
-import com.kitsu.android.anime.ui.modules.main.home.HomeFragment
-import com.kitsu.android.anime.ui.modules.main.profile.ProfileFragment
-import com.kitsu.android.anime.ui.modules.main.treding.TredingFragment
 import kotlinx.android.synthetic.main.fragment_main_pager.*
 
 
@@ -24,26 +22,25 @@ class MainPagerFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        pvHome.adapter = MainPagerAdapter(childFragmentManager)
+
         navigation.setOnNavigationItemSelectedListener {
             when (it.getItemId()) {
                 R.id.navigation_mainpager_home -> {
-                    replaceFragment(HomeFragment.newInstance(), container = R.id.frame_container)
+                    pvHome.currentItem = 0
                     true
                 }
                 R.id.navigation_mainpager_treding -> {
-                    replaceFragment(TredingFragment.newInstance(), container = R.id.frame_container)
+                    pvHome.currentItem = 1
                     true
                 }
                 R.id.navigation_mainpager_profile -> {
-                    replaceFragment(ProfileFragment.newInstance(), container = R.id.frame_container)
+                    pvHome.currentItem = 2
 
                     true
                 }
                 else -> false
             }
-        }
-        savedInstanceState.let {
-            replaceFragment(HomeFragment.newInstance(), container = R.id.frame_container)
         }
     }
 

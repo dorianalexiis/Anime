@@ -4,7 +4,7 @@ package com.kitsu.android.anime.di.modules.fragments
 import com.kitsu.android.anime.ui.modules.main.home.HomeFragment
 import com.kitsu.android.anime.ui.modules.main.mainpager.MainPagerFragment
 import com.kitsu.android.anime.ui.modules.main.profile.ProfileFragment
-import com.kitsu.android.anime.ui.modules.main.treding.TredingFragment
+import com.kitsu.android.anime.ui.modules.main.treding.TrendingFragment
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -19,7 +19,7 @@ abstract class MainFragmentProvider {
     internal abstract fun provideHomeFragmentFactory(): HomeFragment
 
     @ContributesAndroidInjector(modules = arrayOf(BaseFragmentModule::class))
-    internal abstract fun provideTredingFragmentFactory(): TredingFragment
+    internal abstract fun provideTredingFragmentFactory(): TrendingFragment
 
     @ContributesAndroidInjector(modules = arrayOf(BaseFragmentModule::class))
     internal abstract fun provideProfileFragmentFactory(): ProfileFragment

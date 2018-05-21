@@ -32,7 +32,7 @@ open class BaseFragment: Fragment(){
         initialize()
     }
 
-    fun initialize() {
+    open fun initialize() {
         AndroidSupportInjection.inject(this)
     }
 

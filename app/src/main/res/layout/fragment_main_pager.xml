@@ -5,11 +5,11 @@
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <FrameLayout
-        android:id="@+id/frame_container"
+    <com.kitsu.android.anime.ui.customview.PagerNotSliderView
+        android:id="@+id/pvHome"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"/>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
@@ -18,7 +18,7 @@
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
         android:foreground="?attr/selectableItemBackground"
-        app:itemBackground="@color/colorPrimary"
+        app:itemBackground="@color/bgBottomNavigation"
         app:itemIconTint="@android:color/white"
         app:itemTextColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="@+id/frame_container"

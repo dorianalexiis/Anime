@@ -5,5 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
 
-    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="bgBottomNavigation">#7f8c8d</color>
+    <color name="black_50">#b3000000</color>
+    <color name="green">#ffffff</color>
 </resources>

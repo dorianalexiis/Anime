@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Anime</string>
 
+    <string name="error_connection">connection error</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="title_profile">Profile</string>
     <string name="trending">Trending</string>
     <string name="home">Home</string>
+    <string name="profile_insertyourname">Insert your name</string>
+    <string name="profile_logout">Logout</string>
 </resources>

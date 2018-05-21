@@ -1,7 +1,9 @@
 package com.kitsu.android.anime.di.components
 
 import com.kitsu.android.anime.di.modules.ActivityBuilder
+import com.kitsu.android.anime.di.modules.ApiModule
 import com.kitsu.android.anime.di.modules.AppModule
+import com.kitsu.android.anime.di.modules.ControllerModule
 import com.kitsu.android.anime.ui.App
 import dagger.BindsInstance
 import dagger.Component
@@ -10,7 +12,8 @@ import javax.inject.Singleton
 
 
 @Singleton
-@Component(modules = [AndroidInjectionModule::class, AppModule::class, ActivityBuilder::class])
+@Component(modules = [AndroidInjectionModule::class, AppModule::class, ActivityBuilder::class,
+                        ApiModule::class, ControllerModule::class])
 interface AppComponent {
 
 

@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextBold" parent="android:Widget.TextView">
+        <item name="fontPath">fonts/circular-book.ttf</item>
+    </style>
+
+    <style name="TextRegular" parent="android:Widget.TextView">
+        <item name="fontPath">fonts/circular-light.ttf</item>
+    </style>
+
+    <style name="TittleCollapsingToolbar" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 </resources>
