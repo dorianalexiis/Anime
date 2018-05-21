@@ -1,8 +1,8 @@
-# Anitrix
+# Anime Demo
 
 This is a sample app made 100% with Kotlin
 
-# Demo
+# Video Demo
 
 <a href="https://imgflip.com/gif/2aqeqo"><img src="https://i.imgflip.com/2aqeqo.gif" title="made at imgflip.com"/></a>
 
