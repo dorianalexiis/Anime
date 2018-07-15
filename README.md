@@ -14,3 +14,4 @@ This is a sample app made 100% with Kotlin
 * [RxAndroid](https://github.com/ReactiveX/RxAndroid) - Reactive Extensions for Android
 * [Glide](https://github.com/bumptech/glide) - Glide is a fast and efficient open source media management and image loading framework for Android.
 * [Anko](https://github.com/Kotlin/anko) - Anko is a Kotlin library which makes Android application development faster and easier.
+* [Base Android](https://github.com/dorianalexiis/baseandroid) - Base Android is utilities for Activities, Fragments, etc and add arquitecte to project.
