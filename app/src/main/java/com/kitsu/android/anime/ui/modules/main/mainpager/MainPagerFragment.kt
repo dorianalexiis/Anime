@@ -2,13 +2,13 @@ package com.kitsu.android.anime.ui.modules.main.mainpager
 
 import android.os.Bundle
 import android.view.View
+import com.android.dars.base.BaseInjectFragment
 import com.kitsu.android.anime.R
 import com.kitsu.android.anime.ui.adapters.MainPagerAdapter
-import com.kitsu.android.anime.ui.base.BaseFragment
 import kotlinx.android.synthetic.main.fragment_main_pager.*
 
 
-class MainPagerFragment : BaseFragment() {
+class MainPagerFragment : BaseInjectFragment() {
 
     companion object {
         @JvmStatic

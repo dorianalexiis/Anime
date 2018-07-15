@@ -2,14 +2,14 @@ package com.kitsu.android.anime.ui.modules.main.profile
 
 import android.os.Bundle
 import android.view.View
+import com.android.dars.base.BaseInjectFragment
 import com.bumptech.glide.Glide
 import com.kitsu.android.anime.R
-import com.kitsu.android.anime.ui.base.BaseFragment
 import com.kitsu.android.anime.utils.Session
 import com.kitsu.android.anime.utils.showImageCircular
 import kotlinx.android.synthetic.main.fragment_profile.*
 
-class ProfileFragment: BaseFragment(){
+class ProfileFragment: BaseInjectFragment(){
 
     companion object {
         @JvmStatic fun newInstance(): ProfileFragment {

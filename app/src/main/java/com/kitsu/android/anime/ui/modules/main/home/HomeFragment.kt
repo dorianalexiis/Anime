@@ -4,16 +4,16 @@ import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.View
+import com.android.dars.base.BaseInjectFragment
 import com.kitsu.android.anime.R
 import com.kitsu.android.anime.data.response.DataItem
 import com.kitsu.android.anime.ui.adapters.HomeAdapter
-import com.kitsu.android.anime.ui.base.BaseFragment
 import com.kitsu.android.anime.utils.EndlessRecyclerViewScrollListener
 import kotlinx.android.synthetic.main.fragment_home.*
 import org.jetbrains.anko.support.v4.toast
 import javax.inject.Inject
 
-class HomeFragment:BaseFragment(), HomeView{
+class HomeFragment:BaseInjectFragment(), HomeView{
 
     @Inject
     @JvmField

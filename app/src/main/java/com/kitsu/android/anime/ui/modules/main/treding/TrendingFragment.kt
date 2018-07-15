@@ -3,15 +3,15 @@ package com.kitsu.android.anime.ui.modules.main.treding
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
+import com.android.dars.base.BaseInjectFragment
 import com.kitsu.android.anime.R
 import com.kitsu.android.anime.data.response.DataItem
 import com.kitsu.android.anime.ui.adapters.TrendingAdapter
-import com.kitsu.android.anime.ui.base.BaseFragment
 import kotlinx.android.synthetic.main.fragment_treding.*
 import org.jetbrains.anko.support.v4.toast
 import javax.inject.Inject
 
-class TrendingFragment: BaseFragment(), TrendingView{
+class TrendingFragment: BaseInjectFragment(), TrendingView{
 
     @Inject
     @JvmField

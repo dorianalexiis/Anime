@@ -1,17 +1,17 @@
 package com.kitsu.android.anime.ui.modules.detail
 
 import android.os.Bundle
+import com.android.dars.base.BaseInjectActivity
 import com.bumptech.glide.Glide
 import com.kitsu.android.anime.R
 import com.kitsu.android.anime.data.response.DataItem
-import com.kitsu.android.anime.ui.base.BaseActivity
 import com.kitsu.android.anime.utils.showImageRound
 import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.content_detail.*
 import org.jetbrains.anko.toast
 import javax.inject.Inject
 
-class DetailActivity:BaseActivity(), DetailView{
+class DetailActivity: BaseInjectActivity(), DetailView{
 
     @Inject
     @JvmField

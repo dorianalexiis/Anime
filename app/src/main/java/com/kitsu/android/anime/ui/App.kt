@@ -1,22 +1,12 @@
 package com.kitsu.android.anime.ui
 
-import android.app.Activity
-import android.app.Application
+import com.android.dars.base.BaseInjectApp
 import com.kitsu.android.anime.di.components.DaggerAppComponent
 import com.kitsu.android.anime.utils.Session
-import dagger.android.AndroidInjector
-import dagger.android.DispatchingAndroidInjector
-import dagger.android.HasActivityInjector
-import javax.inject.Inject
 
 
 
-class App: Application(), HasActivityInjector {
-
-    @Inject
-    @JvmField
-    var activityDispatchingAndroidInjector: DispatchingAndroidInjector<Activity>? = null
-
+class App: BaseInjectApp() {
 
     override fun onCreate() {
         super.onCreate()
@@ -31,7 +21,5 @@ class App: Application(), HasActivityInjector {
                 .build()
         component.inject(this)
     }
-
-    override fun activityInjector(): AndroidInjector<Activity>? = activityDispatchingAndroidInjector
 
 }
