@@ -7,11 +7,11 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.kitsu.android.anime"
         minSdkVersion 19
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -31,18 +31,18 @@ ext {
     glideVersion = '3.7.0'
     rxJavaVersion = '2.1.3'
     rxAndroidVersion = '2.0.1'
-    supportLibVersion = '27.1.1'
+    supportLibVersion = '28.0.0'
     retrofitVersion = '2.4.0'
     interceptorVersion = '3.9.0'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:support-v4:27.1.1'
+    implementation "com.android.support:support-v4:$supportLibVersion"
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    implementation 'com.github.dorianalexiis:baseandroid:0.13.0'
+    implementation 'com.github.dorianalexiis:baseandroid:0.16.1'
     testImplementation 'junit:junit:4.12'
 
     //google

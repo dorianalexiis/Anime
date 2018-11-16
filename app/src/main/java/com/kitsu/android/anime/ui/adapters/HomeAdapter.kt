@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.item_anime.view.*
 class HomeAdapter(var list: MutableList<DataItem?>) :
         RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
 
-    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindView(data: DataItem?) {
             data?.let {
                 with(it) {

@@ -20,7 +20,7 @@ import org.jetbrains.anko.dip
 class TrendingAdapter (var list: List<DataItem?>) :
         RecyclerView.Adapter<TrendingAdapter.MyViewHolder>() {
 
-    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindView(data: DataItem?, position:Int) {
             data?.let {
                 with(it) {
